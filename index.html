@@ -1,11 +1,456 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>RevoTech - Academy</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/revotech-logo2.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-    <h1>Welcome</h1>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/revotech-logo2.png" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">RevoTech</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://x.com/revotechcenter" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Revotec Store</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <ul>
+        <li><a href="#start_now"><i class="bi bi-envelope navicon"></i> Start Now</a></li>
+        <div id="google_translate_element" style="display: none;"></div>
+          <li style="display: none;">
+      <a href="#" onclick="googleTranslateElementInit(); return false;">
+        <i class="bi bi-translate navicon"></i> <button>Translate</button>
+      </a>
+    </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="" alt="" class="responsive-img" data-aos="fade-in">
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Powering the Digital Revolution</h2>
+        <p>Here, you <span class="typed" data-typed-items="ignite a revolution, create change, shape the future, redefine technology"></span></p>
+        <a href="#start_now">
+        <button class="super-button">
+        <span>Start Now!</span>
+        <svg fill="none" viewBox="0 0 24 24" class="arrow">
+          <path
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2"
+            stroke="currentColor"
+            d="M5 12h14M13 6l6 6-6 6"
+          ></path>
+        </svg>
+      </button>
+      </a>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Revotec Store</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-courses">Courses</li>
+            <li data-filter=".filter-accounts">Accounts</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/rttbj-show-in-store.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books</h4>
+                  <p>RevoTech BugBounty Jouner</p>
+                  <a href="assets/img/portfolio/rttbj-show-in-store.png" title="" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+           
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+<section style="background-color: #050d18; color: white; padding: 80px 0;" id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up" style="text-align: center;">
+    <h2 style="color: white; font-weight: 700;">Services</h2>
+    <p style="color: #cccccc;">At RevoTech, we provide a wide range of professional and educational services designed to empower individuals and businesses in the world of technology, cybersecurity, and innovation.</p>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4" style="color: white;">
+
+      <!-- 1 -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon flex-shrink-0"><i class="bi bi-mortarboard"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link" style="color: white;">Educational Courses</a></h4>
+          <p class="description">We offer high-quality educational programs in technology, cybersecurity, artificial intelligence, and programming — designed to develop future innovators.</p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- 2 -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon flex-shrink-0"><i class="bi bi-controller"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link" style="color: white;">Advanced Gaming Accounts</a></h4>
+          <p class="description">We provide professionally developed and customized gaming accounts for a competitive and immersive experience.</p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- 3 -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon flex-shrink-0"><i class="bi bi-tools"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link" style="color: white;">Game Assistance Tools</a></h4>
+          <p class="description">Exclusive tools and utilities that enhance gameplay, boost performance, and improve user experience for gamers.</p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- 4 -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="icon flex-shrink-0"><i class="bi bi-book"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link" style="color: white;">Educational Books</a></h4>
+          <p class="description">We create professional and easy-to-understand learning materials that simplify technology and cybersecurity concepts for all learners.</p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- 5 -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon flex-shrink-0"><i class="bi bi-shop"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link" style="color: white;">E-Commerce Consulting</a></h4>
+          <p class="description">Professional consulting for creating, developing, and managing successful online stores with technical and marketing strategies.</p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- 6 -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon flex-shrink-0"><i class="bi bi-cpu"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link" style="color: white;">Custom Graduation Projects</a></h4>
+          <p class="description">We design and develop professional, tailored graduation projects that meet academic standards and innovative ideas.</p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- 7 -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="700">
+        <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link" style="color: white;">Business Management</a></h4>
+          <p class="description">We manage and develop business operations on demand, providing tailored strategies to enhance productivity and performance.</p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- 8 -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="800">
+        <div class="icon flex-shrink-0"><i class="bi bi-grid"></i></div>
+        <div>
+          <h4 class="title"><a href="#" class="stretched-link" style="color: white;">Other Professional Services</a></h4>
+          <p class="description">We also provide specialized services such as accounting, system management, and custom digital solutions tailored to your needs.</p>
+        </div>
+      </div>
+      <!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /Services Section -->
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I would like to thank the Revotech team for their quick response and good service</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/revotech-logo2.png" class="testimonial-img" alt="">
+                <h3>Firas Alakhter</h3>
+                <h4>Customer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Courteous and prompt handling</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/revotech-logo2.png" class="testimonial-img" alt="">
+                <h3>Ahmed asiri</h3>
+                <h4>Customer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/revotech-logo2.png" class="testimonial-img" alt="">
+                <h3></h3>
+                <h4>Customer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Distinctive and organized content</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/revotech-logo2.png" class="testimonial-img" alt="">
+                <h3>Khaled</h3>
+                <h4>Customer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+<section id="start_now" style="background-color: #050d18; color: white; padding: 80px 0; font-family: 'Poppins', sans-serif;" class="account-section">
+
+  <div style="text-align: center; margin-bottom: 50px;">
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 10px;color: white;">Start Now</h2>
+    <p style="color: #ccc; font-size: 1.1rem;">Join RevoTech and be part of the digital revolution</p>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1000px; margin: 0 auto;">
+
+    <!-- Login Box -->
+    <div style="flex: 1 1 400px; background-color: #200000; padding: 40px; border-radius: 20px; box-shadow: 0 0 25px rgba(0,0,0,0.5); transition: 0.3s ease;">
+      <h3 style="text-align: center; margin-bottom: 25px; font-weight: 600; color: white;">I am a client and I want to enter the academy</h3>
+        <a href="https://discord.gg/revotech">
+        <button
+                style="width: 100%; padding: 12px; background-color: #ffffff; border: none; border-radius: 10px; color: #200000; font-weight: 600; cursor: pointer; transition: 0.3s;">
+          Go Now
+        </button>
+        </a>
+
+      
+    </div>
+
+    <!-- Create Account Box -->
+    <div style="flex: 1 1 400px; background-color: #200000; padding: 40px; border-radius: 20px; box-shadow: 0 0 25px rgba(0,0,0,0.5); transition: 0.3s ease;">
+      <h3 style="text-align: center; margin-bottom: 25px; font-weight: 600; color: white;">Sign up for any course to get started</h3>
+        <a href="https://revotechcenter.com">
+        <button type="submit"
+                style="width: 100%; padding: 12px; background-color: #ffffff; border: none; border-radius: 10px; color: #200000; font-weight: 600; cursor: pointer; transition: 0.3s;">
+          Buy Now
+        </button>
+        </a>
+    </div>
+
+  </div>
+
+  <style>
+    /* Hover effects */
+    .account-section div[style*="background-color: #2b0000"]:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 40px rgba(255, 0, 0, 0.3);
+    }
+
+    button:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      .account-section div[style*="background-color: #2b0000"] {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</section>
+
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">RevoTech</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'auto'}, 'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
+
 </html>
